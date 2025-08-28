@@ -2,12 +2,17 @@ import React from "react";
 import { Link } from "react-router";
 import Logo from "./Logo";
 import { Linkedin, Twitter, Facebook } from "lucide-react";
+import vectorImage from '../assets/VectorWhite.png'
 export default function Footer() {
   return (
     <div className="bg-[#191A23]  rounded-t-2xl text-white p-4">
       {/* nav bar */}
-      <div className="flex justify-between items-center flex-col md:flex-row ">
-        <Logo />
+      <div className="flex justify-between items-center flex-col md:flex-row my-3 md:my-6">
+            {/* Logo */}
+              <Link to="/" className="flex items-center font-bold text-2xl">
+                <img className="w-auto h-8" src={vectorImage} alt="Positivus logo" />
+                <span>Positivus</span>
+              </Link>
         <nav
           aria-label="footer Navigation"
           className="space-x-4 flex flex-col md:flex-row justify-center items-center"
@@ -57,7 +62,7 @@ export default function Footer() {
         </div>
       </div>
       {/* contact section */}
-      <div className="flex flex-col md:flex-row justify-between items-center my-3 border-b ">
+      <div className="flex flex-col md:flex-row justify-between items-center my-3 border-b md:my-6">
         <section className="space-y-2.5">
           <span className="bg-[#B9FF66] text-black rounded-lg p-1">
             Contact us:
