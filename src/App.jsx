@@ -5,7 +5,7 @@ import { Outlet } from "react-router";
 
 function App() {
   return (
-    <div className="max-w-[95%] mx-auto">
+    <div className="max-w-[90%] mx-auto">
       <Helmet>
         <title>Positivus - Home Page</title>
         <meta
