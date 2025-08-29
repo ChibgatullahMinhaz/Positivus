@@ -43,7 +43,7 @@ const Accordion = () => {
   return (
     <div className="max-w-6xl mx-auto my-10">
       {items.map((item, index) => (
-        <div key={index} className="border-b border-gray-300">
+        <div key={index} className="border-b-4 border-black rounded-2xl">
           {/* Header */}
           <button
             onClick={() => toggleAccordion(index)}
