@@ -2,6 +2,10 @@ import { Helmet } from "react-helmet";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router";
+//carrosol
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function App() {
   return (

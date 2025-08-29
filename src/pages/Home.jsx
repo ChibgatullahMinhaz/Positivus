@@ -7,6 +7,7 @@ import CaseStudies from "../Components/CaseStudies";
 import WorkingProgress from "../Components/workingProgress";
 import Team from "../Components/Team";
 import Testimonials from "../Components/Testimonials";
+import Contact from "../Components/Contact";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <WorkingProgress />
       <Team />
       <Testimonials />
+      <Contact />
     </>
   );
 }
