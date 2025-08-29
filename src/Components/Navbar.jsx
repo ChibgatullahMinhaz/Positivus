@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router"; 
-import logo from "../assets/Logo.png";
 import Logo from "./Logo";
 
 const Navbar = () => {
@@ -8,7 +7,7 @@ const Navbar = () => {
 
   return (
     <header >
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
+      <div className="container mx-auto flex justify-between items-center py-4">
        <Logo />
 
         {/* Hamburger button (mobile) */}
@@ -62,7 +61,7 @@ const Navbar = () => {
           <Link to="/blog" className="block px-4 py-2 hover:text-green-600">
             Blog
           </Link>
-          <button className="p-2 border-2 rounded-2xl cursor-pointer mt-2 lg:mt-0">
+          <button className="p-2 border-2 rounded-2xl cursor-pointer mt-2 lg:mt-0 hover:bg-[#191A23] hover:text-white transition-all duration-700">
             Request a quote
           </button>
         </nav>
