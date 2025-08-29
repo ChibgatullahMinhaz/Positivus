@@ -8,6 +8,7 @@ import content from "../assets/service/content.png";
 import analytics from "../assets/service/traking.png";
 
 import arrow from "../assets/Icon/Arrow.png";
+import SectionHeading from "../Components/SectionHeading";
 const cardData = [
   {
     image: seo,
@@ -58,18 +59,13 @@ const cardData = [
     bgColor: "bg-[#191A23]",
   },
 ];
+const title = "Services";
+const des =
+  "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include: ";
 const Service = () => {
   return (
     <section className="my-6">
-      <div className="flex flex-col md:flex-row  space-x-7 items-center my-4">
-        <h1 className="bg-yellow-200 rounded-lg text-black font-bold p-2">
-          Services
-        </h1>
-        <p className="max-w-md my-4 sm:my-0">
-          At our digital marketing agency, we offer a range of services to help
-          businesses grow and succeed online. These services include:
-        </p>
-      </div>
+      <SectionHeading title={title} des={des} />
       {/* cards */}
       <section className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-3 my-6">
         {cardData.map((card, idx) => (
