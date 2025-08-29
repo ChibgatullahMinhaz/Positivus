@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
+import Accordion from "./Accordion";
 
 const WorkingProgress = () => {
   const title = "Our Working Process ";
@@ -7,6 +8,7 @@ const WorkingProgress = () => {
   return (
     <section>
       <SectionHeading title={title} des={des} />
+      <Accordion />
     </section>
   );
 };
